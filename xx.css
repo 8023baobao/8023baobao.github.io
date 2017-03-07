@@ -1,0 +1,39 @@
+
+.xx-box{
+    position:absolute;
+    left:10%;
+    top:10%;
+    margin-left:0px;
+    margin-top:0px;
+    width:500px;
+    height:500px;
+    /*background-color:#000;*/
+    opacity: 0.5;
+}
+.xx-box .text{
+    position:absolute;
+
+    top:30%;
+    height:48px;
+    line-height:48px;
+    color:#f00;
+    text-shadow: 3px 3px 4px #f00;
+    font-size:36px;
+    font-weight:bold;
+    /*width:100%;*/
+    /*text-align:center;*/
+    font-family:Tangerine,Tahoma,Arial,"\65f6\5c1a\4e2d\9ed1\7b80\4f53","\5b8b\4f53";
+}
+
+.xx-box .textl{
+    left:-10%;
+}
+.xx-box .textr{
+    right:-126%;
+}
+.xx-box .item{
+    position:absolute;
+    width:2px;
+    height:20px;
+    overflow:hidden;
+}
