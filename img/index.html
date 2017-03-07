@@ -1,0 +1,108 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>世界上最美的女人</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="你喜欢这个礼物吗？" />
+	<meta name="description" content="汤了个包包" />
+	<meta name="my" content="多希望你能对我好点" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+	<link href="css/ohmygod.css" rel="stylesheet" type="text/css"/>
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Tangerine">
+	<link rel="stylesheet" href="css/xx.css">
+</head>
+<body>
+
+    <div class="xx-boxl xx-box" id="xx-boxl">
+        <div class="textl text">I Love You</div>
+    </div>
+    <div class="xx-boxr xx-box" id="xx-boxr">
+        <div class="textr text">I Love You</div>
+    </div>
+
+    <script>
+		function createPoint(x,y,c,b){
+            var div = document.createElement("div");
+            div.className = "item";
+            div.style.left = x + "px";
+            div.style.top = y + "px";
+            div.style.backgroundColor = c;
+            if ( b == 0){
+                document.getElementById("xx-boxl").appendChild(div);
+            }else {
+                document.getElementById("xx-boxr").appendChild(div);
+            }
+        }
+		function heartShape(r,dx,dy,c,b){//r:大小;dx:水平偏移;dy:垂直偏移;c:颜色
+			var m,n,x,y,i;
+			for(i = 0; i <= 200; i += 0.04){
+				m = i;
+				n = -r * (((Math.sin(i) * Math.sqrt(Math.abs(Math.cos(i)))) / (Math.sin(i) + 1.4)) - 2 * Math.sin(i) + 2);
+				x = n * Math.cos(m) + dx;
+				y = n * Math.sin(m) + dy;
+				createPoint(x,y,c,b);
+			}
+		}
+		var w = window.innerWidth;
+		heartShape(60,10,100,"#f00",0);
+		heartShape(60,w-290,100,"#f00",1);
+	</script>
+
+
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-4 col-md-4">
+				<a href="https://8023baobao.github.io" class="thumbnail">
+					<img src="img/1.jpg" alt="...">
+				</a>
+			</div>
+			<div class="col-xs-4 col-md-4">
+                <a href="https://8023baobao.github.io" class="thumbnail">
+                <img src="img/2.jpg" alt="...">
+				</a>
+			</div>
+			<div class="col-xs-4 col-md-4">
+				<a href="https://8023baobao.github.ioo" class="thumbnail">
+					<img src="img/3.jpg" alt="...">
+				</a>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-4 col-md-4">
+				<a href="https://8023baobao.github.io" class="thumbnail">
+					<img src="img/4.jpg" alt="...">
+				</a>
+			</div>
+			<div class="col-xs-4 col-md-4">
+				<a href="https://8023baobao.github.io" class="thumbnail">
+					<img src="img/5.jpg" alt="...">
+				</a>
+			</div>
+			<div class="col-xs-4 col-md-4">
+				<a href="https://8023baobao.github.io" class="thumbnail">
+					<img src="img/6.jpg" alt="...">
+				</a>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-4 col-md-4">
+				<a href="https://8023baobao.github.io" class="thumbnail">
+					<img src="img/7.jpg" alt="...">
+				</a>
+			</div>
+			<div class="col-xs-4 col-md-4">
+				<a href="https://8023baobao.github.io" class="thumbnail">
+					<img src="img/8.jpg" alt="...">
+				</a>
+			</div>
+			<div class="col-xs-4 col-md-4">
+				<a href="https://8023baobao.github.io" class="thumbnail">
+					<img src="img/9.jpg" alt="...">
+				</a>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
