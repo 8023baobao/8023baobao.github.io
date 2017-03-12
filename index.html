@@ -9,8 +9,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
 	<link href="css/ohmygod.css" rel="stylesheet" type="text/css"/>
-	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Tangerine">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
 	<link rel="stylesheet" href="css/xx.css">
+	<script src="js/jquery-2.2.0.min.js"></script>
 </head>
 <body>
 
@@ -53,56 +54,74 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-4 col-md-4">
-				<a href="https://8023baobao.github.io" class="thumbnail">
+				<a  class="thumbnail">
 					<img src="img/1.jpg" alt="...">
 				</a>
 			</div>
 			<div class="col-xs-4 col-md-4">
-                <a href="https://8023baobao.github.io" class="thumbnail">
+                <a  class="thumbnail">
                 <img src="img/2.jpg" alt="...">
 				</a>
 			</div>
 			<div class="col-xs-4 col-md-4">
-				<a href="https://8023baobao.github.ioo" class="thumbnail">
+				<a  class="thumbnail">
 					<img src="img/3.jpg" alt="...">
 				</a>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-xs-4 col-md-4">
-				<a href="https://8023baobao.github.io" class="thumbnail">
+				<a  class="thumbnail">
 					<img src="img/4.jpg" alt="...">
 				</a>
 			</div>
-			<div class="col-xs-4 col-md-4">
-				<a href="https://8023baobao.github.io" class="thumbnail">
-					<img src="img/5.jpg" alt="...">
+			<div class="col-xs-4 col-md-4 mybaobao">
+				<a class="thumbnail">
+					<img src="img/5.jpg" alt="..." class="baobao">
 				</a>
 			</div>
 			<div class="col-xs-4 col-md-4">
-				<a href="https://8023baobao.github.io" class="thumbnail">
+				<a class="thumbnail">
 					<img src="img/6.jpg" alt="...">
 				</a>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-xs-4 col-md-4">
-				<a href="https://8023baobao.github.io" class="thumbnail">
+				<a  class="thumbnail">
 					<img src="img/7.jpg" alt="...">
 				</a>
 			</div>
 			<div class="col-xs-4 col-md-4">
-				<a href="https://8023baobao.github.io" class="thumbnail">
+				<a  class="thumbnail">
 					<img src="img/8.jpg" alt="...">
 				</a>
 			</div>
 			<div class="col-xs-4 col-md-4">
-				<a href="https://8023baobao.github.io" class="thumbnail">
+				<a  class="thumbnail">
 					<img src="img/9.jpg" alt="...">
 				</a>
 			</div>
 		</div>
 	</div>
 
+	<script>
+//        $(function () {
+//            $(".mybaobao").click(function () {
+//                var img = $(".baobao")[0];
+//                var str = img.src.split("/").pop();
+//                if (str == '5.jpg'){
+//                    img.src = "img/10.jpg"
+//                }else if (str == '10.jpg'){
+//                    img.src = "img/11.jpg"
+//                }else if ( str =='11.jpg'){
+//                    img.src = "img/5.jpg"
+//                }
+//            })
+//        });
+        window.onload=function () {
+            document.getElementsByClassName("mybaobao").
+        }
+	</script>
 </body>
 </html>
